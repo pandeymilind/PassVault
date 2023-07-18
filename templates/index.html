@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Password Manager</title>
+  </head>
+  <style media="screen">
+    body{
+      background: #0F1B2E;
+    }
+    .box1{
+      margin:100px;
+      background:white;
+      border: 1px solid white ;
+      width: 300px;
+      height: 400px;
+      border-radius: 20px;
+      box-shadow: 5px 2px 6px 1px #9BA7B9 ;
+    }
+    .heaad{
+        margin-top: 50px;
+    }
+    .User_{
+      background-color: #eee;
+      margin:10px;
+      margin-left: 40px;
+      border: none;
+      padding:10px 15px;
+      box-shadow: 10px 1px 20px -9px ;
+    }
+    .pass_{
+      background-color: #eee;
+      margin:10px;
+      margin-left: 40px;
+      border: none;
+      padding:10px 15px;
+      box-shadow: 10px 1px 20px -9px ;
+    }
+    .login_{
+      margin:10px;
+      margin-left: 100px;
+       background-color: #4CAF50;
+       color: white;
+       padding: 12px 25px;
+       border: none;
+       border-radius: 4px;
+       cursor: pointer;
+    }
+    .login_:hover{
+      background-color: #45a049;
+    }
+    .signup_{
+      margin:10px;
+      margin-left: 100px;
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .signup_{
+      background-color: #45a049;
+    }
+    .Forget_{
+      margin:10px;
+      margin-left: 20px;
+    }
+  </style>
+  <body>
+    <div class="box1">
+      <form action="#" method="post">
+          <center><h1 class="heaad">Password Manager</h1></center>
+          <div ><input class="User_" type="text" name="user_id" placeholder="User id"></div>
+          <div ><input  class="pass_"type="password" name="user_pass" placeholder="Password"></div>
+          <button type="submit" name="Login" value="Login" class="login_">Login</button>
+          <div><a href="{{ url_for('signup') }}"><button type="button" name="Signup" value="Signup" class="signup_">Signup</button></a></div>
+          <div class="Forget_"><a href="{{ url_for('forget') }}">Forget Password</a></div>
+      </form>
+      </div>
+  </body>
+</html>
